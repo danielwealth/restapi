@@ -1,49 +1,27 @@
-# restapi
-a simple RESTAPI
-# 🧰 Express.js REST API — In-Memory Item Manager
 
-A lightweight, beginner-friendly Express.js application for managing items using a simple in-memory array. Supports full CRUD operations (Create, Read, Update, Delete) with basic error handling and clean middleware setup.
+this is a basic RESTAPI with NODE.JS
 
----
+SET UP INSTRUCTION
+# install NODE.JS (V4)
+# install Express
 
-## 🚀 Features
+API DOCUMENTATION
+BASE URL: localhost:300
 
-- `GET /` — Welcome route
-- `GET /items` — Get all items
-- `GET /items/:id` — Get item by ID
-- `POST /items` — Create a new item
-- `PUT /items/:id` — Update an item
-- `DELETE /items/:id` — Delete an item
-- Centralized error handling (400, 404, 500)
-- Middleware-powered JSON parsing
-- In-memory storage (no database required)
+ENDPOINTS
+METHODS           ENDPOIND DESCRIPTION
+GET                 /  HEALTH CHECK ROUTE      
+GET                 /ITEMS     GET ALL ITEMS
+GET                 /ITEMS:ID   GET ONE ITEM
+POST                /ITEMS      CREAT A NEW ITEM
+PUT                /ITEMS:ID   UPDATE ONE ITEM
+DELETE             /ITEMS:ID    DELETE AN ITEM
 
----
+SAMPLE REQUEST WITH POSTMAN
+GET/ITEMS      ---- RETURN A LIST OF ALL ITEMS
 
-## 🛠 Installation
 
-```bash
-git clone https://github.com/yourusername/express-item-api.git
-cd express-item-api
-npm install
 
-RUN THE APP
-node app.js
-
-SAMPLE REQUEST USING POSTMAN
-POST /items
-Content-Type: application/json
-Body:
-{
-  "name": "My First Item"
-}
-UPDATE ITEM
-PUT /items/1
-Content-Type: application/json
-Body:
-{
-  "name": "Updated Item Name"
-}
 
 
 
