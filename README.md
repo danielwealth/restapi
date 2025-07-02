@@ -34,6 +34,7 @@ DELETE	/items/:id	    Delete an item by ID
 
 
 Sample Request/Response Examples with postman
+
 GET /items        Returns a list of all item
 json
 [
@@ -53,5 +54,11 @@ json
 RESPONSE
 json
 { "id": 3, "name": "New Item" }
+
+ERROR RESPONCES
+Code	     Scenario	                         Example Message
+400	       Missing fields	              { "error": "Name is required" }
+404	       Item not found / bad URL	    { "error": "Item not found" }
+500	       Server error	                { "error": "Something went wrong!" }
 
 
