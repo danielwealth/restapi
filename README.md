@@ -4,6 +4,22 @@ install npm
 install express
 
 
+INSTALLATION STEPS
+1) git clone    https://github.com/yourusername/express-item-api.git
+cd express-item-api
+
+INSTALLATION DEPENDENCIES
+npm install
+
+START SERVER
+node server.js
+
+IN YOUR BROWSER VISIT http://localhost:3000
+
+
+DOCUMNTATION
+BASE URL: http://localhost:3000
+
 
 
 
@@ -18,6 +34,24 @@ DELETE	/items/:id	    Delete an item by ID
 
 
 Sample Request/Response Examples with postman
-GET /items
+GET /items        Returns a list of all item
+json
+[
+  { "id": 1, "name": "Item One" },
+  { "id": 2, "name": "Item Two" }
+]
 
-    Returns a list of all item
+GET/items/1     returns a single item
+json
+{ "id": 1, "name": "Item One" }
+
+POST/items
+REQUEST JSON(BODY)
+json
+{ "name": "New Item" }
+
+RESPONSE
+json
+{ "id": 3, "name": "New Item" }
+
+
